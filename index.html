@@ -1,11 +1,241 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>GSE</title>
-</head> 
-<body>
-    <h1>Growth Strategy Engine</h1>
-    <p>My first real website</p>
-</body>   
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>GSE Studio — Grow. Sell. Earn.</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body id="top">
+
+<header class="site-header">
+  <div class="nav-wrap">
+    <a class="brand" href="#top" aria-label="GSE Studio home">
+    <span class="logo">
+    <img src="images/gselogo.jpg" alt="GSE Studio Logo"/>
+    </span>
+
+      <span class="brand-text">
+        <span class="brand-name">GSE</span>
+        <span class="brand-sub">Studio</span>
+      </span>
+    </a>
+
+    <nav class="site-nav" aria-label="Primary">
+      <a href="#what-we-do">What we do</a>
+      <a href="#how-it-works">How it works</a>
+      <a href="#who-for">Who this is for</a>
+      <a href="#lets-talk">Let’s talk</a>
+    </nav>
+
+    <div class="nav-cta">
+      <a class="nav-btn" href="#audit" onclick="toggleAudit()">Book free audit</a>
+    </div>
+
+    <button class="nav-toggle" aria-label="Open menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+
+
+
+  <!-- Mobile menu (works without JS; JS optional) -->
+  <div class="mobile-nav" id="mobileNav">
+    <a href="#what-we-do">What we do</a>
+    <a href="#how-it-works">How it works</a>
+    <a href="#who-for">Who this is for</a>
+    <a href="#lets-talk">Let’s talk</a>
+    <a class="nav-btn" href="#audit" onclick="toggleAudit()">Book free audit</a>
+  </div>
+</header>
+
+
+  <main class="container">
+
+    <!-- HERO -->
+    <section class="hero" id="top">
+  <span class="eyebrow">
+    GSE Studio • BGSES™ Framework
+  </span>
+
+  <h1>Grow. Sell. Earn.</h1>
+
+  <p class="hero-sub">
+    We help small and growing businesses become growth-ready
+    using our proprietary BGSES™ Framework.
+  </p>
+
+  <!-- slang / stylish supporting line -->
+  <p class="hero-support">
+    Practical growth systems for small and growing businesses - clear strategy, clean execution, real progress.
+  </p>
+
+  <button class="primary-btn" onclick="toggleAudit()">
+    Book a Free Growth Audit
+  </button>
+
+  <div class="hero-image">
+    <img src="images/hero.jpg" alt="GSE Studio – Growth strategy">
+  </div>
+</section>
+    <hr class="divider">
+
+
+    <!-- WHAT WE DO -->
+<section id="what-we-do" class="what-we-do">
+  <h2>What we do</h2>
+
+  <p class="lead">
+    We focus on the fundamentals that most businesses skip — clarity, structure, and execution.
+  <br>
+  <br>
+
+      Our work is practical, direct, and built to move your business forward,
+    not impress with buzzwords.
+  </p>
+
+  <ul class="clean-list">
+    <li>Practical growth strategy — clear next steps, not theory</li>
+    <li>Simple, clean websites that convert</li>
+    <li>Social media & WhatsApp business setup</li>
+    <li>Online presence cleanup and improvement</li>
+    <li>Business setup and growth starter kits</li>
+    <li>Positioning and readiness for scale</li>
+  </ul>
+</section>
+
+<div class="body2-image">
+    <img src="images/body2.JPEG" alt="GSE Studio - Strategy & Clarity">
+</div>
+
+<!-- HOW IT WORKS -->
+<section id="how-it-works" class="how-it-works">
+  <h2>How it works</h2>
+
+  <div class="steps">
+    <div class="step-card">
+      <span class="step-number">01</span>
+      <h3>Audit & clarity</h3>
+       <p>We review your business, online presence, and positioning to identify what matters most.
+       </p>
+    </div>
+
+    <div class="step-card">
+      <span class="step-number">02</span>
+      <h3>Execution</h3>
+      <p>
+        We implement the essentials — structure, setup, messaging, and visibility.
+      </p>
+    </div>
+
+    <div class="step-card">
+      <span class="step-number">03</span>
+      <h3>Growth readiness</h3>
+      <p>
+        You leave with a clear foundation and a practical path forward.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- WHO THIS IS FOR -->
+<section id="who-for" class="who-for">
+  <h2>Who this is for</h2>
+
+  <div class="who-grid">
+    <div class="who-item">Small businesses</div>
+    <div class="who-item">Solo founders</div>
+    <div class="who-item">Early-stage startups</div>
+    <div class="who-item">Service providers</div>
+    <div class="who-item">Local & online businesses</div>
+  </div>
+
+  <p class="not-for">
+    This is not for businesses looking for shortcuts.
+  </p>
+</section>
+
+
+<!-- LET'S TALK -->
+<section id="lets-talk" class="lets-talk">
+  <h2>Let’s talk</h2>
+
+  <p class="lead">
+    If you want clarity, structure, and practical growth — start with a free audit.
+  </p>
+
+  <p class="contact">
+    <a href="mailto:hello@gsestudio.co">hello@gsestudio.co</a><br>
+    <a href="https://wa.me/27767034023?text=Hello%20GSE%20Studio%2C%20I%E2%80%99d%20like%20to%20start%20with%20a%20free%20growth%20audit." 
+       target="_blank"
+       class="Whatsapp-btn"
+       >Chat on WhatsApp
+    </a>
+  </p>
+
+  <button class="primary-btn" onclick="toggleAudit()">
+    Book a Free Growth Audit
+  </button>
+
+  <!-- AUDIT FORM (HIDDEN BY DEFAULT) -->
+    <section id="audit" class="audit hidden">
+      <h2>Free Growth Audit</h2>
+
+      <form action="mailto:hello@gsestudio.co" method="POST" enctype="text/plain">
+
+        <label>Are you a starting or a growing business?</label>
+        <select name="Business Stage" required>
+          <option value="">Select one</option>
+          <option>Starting</option>
+          <option>Growing</option>
+        </select>
+
+        <label>What problem does your business solve?</label>
+        <textarea name="Business Value" required></textarea>
+
+        <label>Who does your business primarily serve or target?</label>
+        <textarea name="Target Prospects" required></textarea>
+
+        <label>What challenges are you currently experiencing?</label>
+        <textarea name="Current Challenges"></textarea>
+
+        <label>
+          Are there any changes you believe would improve your business, but haven't implemented yet? (Optional)
+        </label>
+        <textarea name="Desired Changes"></textarea>
+
+        <label>What kind of growth impact or outcome are you hoping to achieve with GSE?</label>
+        <textarea name="Expected Growth Impact" required></textarea>
+
+        <button type="submit" class="primary-btn">
+          Submit Audit
+        </button>
+      </form>
+    </section>
+</section>
+
+   
+  </main>
+
+  <footer class="site-footer">
+  <div class="footer-inner">
+    <p class="footer-copy">
+      © 2026 GSE Studio. All rights reserved.
+    </p>
+
+    <nav class="footer-links">
+      <a href="privacy.html">Privacy Policy</a>
+      <span>·</span>
+      <a href="terms.html">Terms of Service</a>
+      <span>·</span>
+      <a href="mailto:hello@gsestudio.co">hello@gsestudio.co</a>
+    </nav>
+  </div>
+</footer>
+
+<script src="index.js"></script>
+</body>
 </html>
