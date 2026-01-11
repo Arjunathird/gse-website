@@ -15,3 +15,29 @@ if (toggle) {
     toggle.setAttribute("aria-expanded", String(!expanded));
   });
 }
+
+document.addEventListener('DOMContentLoaded', () => {
+  const form = document.querySelector('form[name="growth-audit"]');
+  const success = document.getElementById('form-success');
+
+  if (!form || !success) return;
+
+  form.addEventListener('submit', (e) => {
+    e.preventDefault();
+
+    const data = new FormData(form);
+
+    fetch('/', {
+      method: 'POST',
+      body: data,
+    })
+    .then(() => {
+      form.reset();                 // clears form
+      form.style.display = 'none';  // hides form
+      success.style.display = 'block'; // shows thank you
+    })
+    .catch(() => {
+      alert('Submission failed. Please try again.');
+    });
+  });
+});

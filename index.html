@@ -189,7 +189,7 @@
         method="POST"
         data-netlify="true"
         netlify-honeypot="bot-field"
-        action="/thank-you.html">
+        class="audit-form">
 
         <input type="hidden" name="form-name" value="growth-audit">
         <input type="hidden" name="bot-field">
@@ -200,6 +200,12 @@
           <option>Starting</option>
           <option>Growing</option>
         </select>
+
+        <label>Please provide your business name.</label>
+        <input type="text" name="business_name" required>
+
+        <label>Please provide your email address.</label>
+        <input type="email" name="email" required>
 
         <label>What problem does your business solve?</label>
         <textarea name="business_value" required></textarea>
@@ -222,6 +228,11 @@
           Submit Audit
         </button>
       </form>
+      
+      <div id="form-success" style="display: none;">
+        <h3>Thank you for submitting your growth audit!</h3>
+        <p>We will review your information and get back to you shortly.</p>
+      </div>
     </section>
 </section>
 
