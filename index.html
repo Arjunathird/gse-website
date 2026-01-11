@@ -184,31 +184,39 @@
     <section id="audit" class="audit hidden">
       <h2>Free Growth Audit</h2>
 
-      <form action="mailto:hello@gsestudio.co" method="POST" enctype="text/plain">
+      <form name="growth-audit"
+        method="POST"
+        data-netlify="true"
+        netlify-honeypot="bot-field"
+        class="audit-form"
+        action="/thank-you.html">
+
+        <input type="hidden" name="form-name" value="growth-audit">
+        <input type="hidden" name="bot-field">
 
         <label>Are you a starting or a growing business?</label>
-        <select name="Business Stage" required>
+        <select name="business_stage" required>
           <option value="">Select one</option>
           <option>Starting</option>
           <option>Growing</option>
         </select>
 
         <label>What problem does your business solve?</label>
-        <textarea name="Business Value" required></textarea>
+        <textarea name="business_value" required></textarea>
 
         <label>Who does your business primarily serve or target?</label>
-        <textarea name="Target Prospects" required></textarea>
+        <textarea name="target_prospects" required></textarea>
 
         <label>What challenges are you currently experiencing?</label>
-        <textarea name="Current Challenges"></textarea>
+        <textarea name="current_challenges"></textarea>
 
         <label>
           Are there any changes you believe would improve your business, but haven't implemented yet? (Optional)
         </label>
-        <textarea name="Desired Changes"></textarea>
+        <textarea name="desired_changes"></textarea>
 
         <label>What kind of growth impact or outcome are you hoping to achieve with GSE?</label>
-        <textarea name="Expected Growth Impact" required></textarea>
+        <textarea name="expected_growth_impact" required></textarea>
 
         <button type="submit" class="primary-btn">
           Submit Audit
