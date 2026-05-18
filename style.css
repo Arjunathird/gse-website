@@ -411,7 +411,10 @@ textarea {
   margin-top: 40px;
   background: #f4f4f4;
   border-radius: 14px;
-}
+  h3 {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+} }
 
 .clean-list li {
   padding: 1rem 0;
@@ -442,7 +445,10 @@ textarea {
   margin-top: 40px;
   background: #f4f4f4;
   border-radius: 14px;
-}
+  h3 {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+} }
 
 .clean-list2 li {
   padding: 1rem 0;
@@ -472,7 +478,10 @@ textarea {
   margin-top: 40px;
   background: #f4f4f4;
   border-radius: 14px;
-}
+  h3 {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+} }
 
 .clean-list3 li {
   padding: 1rem 0;
