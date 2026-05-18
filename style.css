@@ -434,6 +434,69 @@ textarea {
   opacity: 0.9;
 }
 
+
+.clean-list2
+ {
+  list-style: none;
+  padding: 2.5rem;
+  margin-top: 40px;
+  background: #f4f4f4;
+  border-radius: 14px;
+}
+
+.clean-list2 li {
+  padding: 1rem 0;
+  border-bottom: 1px solid #e0e0e0;
+  font-size: 1rem;
+  color: #222;
+  transition: transform 0.25s ease, color 0.25s ease;
+}
+
+.clean-list2 li:first-child {
+    font-weight: 600;
+}
+
+.clean-list2 li:last-child {
+  border-bottom: none;
+}
+
+.clean-list2 li:hover {
+  transform: translateX(6px);
+  opacity: 0.9;
+}
+
+
+.clean-list3 {
+  list-style: none;
+  padding: 2.5rem;
+  margin-top: 40px;
+  background: #f4f4f4;
+  border-radius: 14px;
+}
+
+.clean-list3 li {
+  padding: 1rem 0;
+  border-bottom: 1px solid #e0e0e0;
+  font-size: 1rem;
+  color: #222;
+  transition: transform 0.25s ease, color 0.25s ease;
+}
+
+.clean-list3 li:first-child {
+    font-weight: 600;
+}
+
+.clean-list3 li:last-child {
+  border-bottom: none;
+}
+
+.clean-list3 li:hover {
+  transform: translateX(6px);
+  opacity: 0.9;
+}
+
+
+
 /* =========================
    BODY IMAGE – PREMIUM
 ========================= */
